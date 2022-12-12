@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function Calculations() {
   const [result, setResult] = useState(0);
   const [first, setFirst] = useState(0);
   const [second, setSecond] = useState(0);
-  const [operation, setOperation] = useState("+");
+  const [operation, setOperation] = useState('+');
 
   return (
-    <div className="card" style={{ width: "18rem", margin: "10px 0" }}>
+    <div className="card" style={{ width: '18rem', margin: '10px 0' }}>
       <div className="card-body">
         <h5 className="card-title">Result</h5>
         <h4 className="card-text">{result}</h4>
@@ -30,12 +30,20 @@ function Calculations() {
           </button>
           <ul className="dropdown-menu dropdown-menu-end">
             <li>
-              <div className="dropdown-item" onClick={() => setOperation("+")}>
+              <div
+                data-testid="+"
+                className="dropdown-item"
+                onClick={() => setOperation('+')}
+              >
                 +
               </div>
             </li>
             <li>
-              <div className="dropdown-item" onClick={() => setOperation("-")}>
+              <div
+                data-testid="-"
+                className="dropdown-item"
+                onClick={() => setOperation('-')}
+              >
                 -
               </div>
             </li>
@@ -51,10 +59,10 @@ function Calculations() {
 
         <div
           role="button"
-          style={{ display: "block" }}
+          style={{ display: 'block' }}
           className="btn btn-outline-primary"
           onClick={() =>
-            setResult(operation === "+" ? first + second : first - second)
+            setResult(operation === '+' ? first + second : first - second)
           }
         >
           Evaluate
