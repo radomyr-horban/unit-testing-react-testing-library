@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../components/App';
 
-xdescribe('App component', () => {
+describe('App component', () => {
   test('Should be displayed image when the first tab is selected', () => {
     render(<App />);
     const pictureBtn = screen.getByRole('button', { name: 'Picture' });
