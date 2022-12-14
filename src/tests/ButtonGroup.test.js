@@ -1,8 +1,8 @@
-import {render, screen} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ButtonGroup from '../components/ButtonGroup';
 
-xdescribe('ButtonGroup component', () => {
+describe('ButtonGroup component', () => {
   test('Text alignment in the paragraph is left', () => {
     render(<ButtonGroup />);
     const leftBtn = screen.getByRole('radio', {

@@ -30,20 +30,12 @@ function Calculations() {
           </button>
           <ul className="dropdown-menu dropdown-menu-end">
             <li>
-              <div
-                data-testid="+"
-                className="dropdown-item"
-                onClick={() => setOperation('+')}
-              >
+              <div className="dropdown-item" onClick={() => setOperation('+')}>
                 +
               </div>
             </li>
             <li>
-              <div
-                data-testid="-"
-                className="dropdown-item"
-                onClick={() => setOperation('-')}
-              >
+              <div className="dropdown-item" onClick={() => setOperation('-')}>
                 -
               </div>
             </li>
